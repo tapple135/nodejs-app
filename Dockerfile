@@ -2,8 +2,8 @@ FROM node:14-slim
 
 LABEL Red Hat Training <nexweb1@gmail.com>
 
-ENV PORT=8080 \
-    APP_ROOT=/opt/app-root/
+ENV PORT 8080 \
+    APP_ROOT /opt/app-root/
     
 RUN mkdir -p ${APP_ROOT}
 
