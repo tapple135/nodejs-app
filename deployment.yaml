@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodejs-hello
+  name: nodejs-app
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: nodejs-app
@@ -17,6 +17,9 @@ spec:
         image: nexweb1/nodejs-app
         ports:
         - containerPort: 8080
+        env:
+        - name: PORT
+          value: "8080"
 ---
 apiVersion: v1
 kind: Service
