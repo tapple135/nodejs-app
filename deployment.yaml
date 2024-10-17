@@ -14,7 +14,7 @@ spec:
     spec:                   
       containers: 
       - name: nodejs-app 
-        image: nexweb1/nodejs-app
+        image: jyseo135/nodejs-app
         ports:
         - containerPort: 8080
         env:
