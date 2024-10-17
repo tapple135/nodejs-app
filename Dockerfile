@@ -13,5 +13,5 @@ RUN npm install
 
 EXPOSE ${PORT}
 
-# Start node server on port 8080
+# Start node server1 on port 8080
 CMD ["npm", "start"]
